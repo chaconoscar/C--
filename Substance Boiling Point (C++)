@@ -1,0 +1,44 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+/*
+3. Write a function that takes in the substance and return the boiling point (in Celsius) for the following substances. 
+Water 100C, Mercury 357C, Copper 1187C, Silver 2193C, Gold 2660C
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    string substance;
+    int celsius;
+    
+    cout<<"Choose any of the following substances: "<<'\n'<<"Water"<<'\n'<<"Mercury"<<'\n'<<"Copper"<<'\n'<<"Silver"<<'\n'<<"Gold"<<'\n'<<""<<'\n'<<"... ";
+    cin>>substance;
+    
+    if (substance == "Water"){
+        celsius = 100;
+    } else if (substance == "Mercury"){
+        celsius = 375;
+    }else if (substance == "Copper"){
+        celsius = 1187;
+    }else if (substance == "Silver"){
+        celsius = 2193;
+    }else if (substance == "Gold"){
+        celsius = 2660;
+    }else{
+        celsius = -999;
+        cout<<"Invalid material";
+    }
+    cout<<'\n';
+    cout<<"The boiling point is "<<celsius<<" Celsius.";
+    
+    return 0;
+}
