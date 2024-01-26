@@ -1,0 +1,54 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+/*
+4. Write a program that would take the Watts value of light bulb and return the lumens
+Watts     Brightness in Lumen
+15            125
+25            215
+40            500
+60            880
+75           1000
+100         1675
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    int Watts;
+    string Lumens;
+    
+    cout<<"Choose any of the following watts: "<<'\n'<<"15"<<'\n'<<"25"<<'\n'<<"40"<<'\n'<<"60"<<'\n'<<"75"<<'\n'<<"100"<<'\n'<<'\n'<<"... ";
+    cin>>Watts;
+    
+    if (Watts == 15){
+        Lumens = "125";
+    } 
+    if (Watts == 25){
+        Lumens = "215";
+    }
+    if (Watts == 40){
+        Lumens = "500";
+    }
+    if (Watts == 60){
+        Lumens = "880";
+    }
+    if (Watts == 75){
+        Lumens = "1000";
+    }    
+    if (Watts == 100){
+        Lumens = "1675";
+    }
+    cout<<'\n';
+    cout<<Watts<<" Watts are equal to "<<Lumens<<" Lumens.";
+    
+    return 0;
+}
